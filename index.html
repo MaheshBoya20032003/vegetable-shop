@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits and Vegetables</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Navbar will be loaded here -->
+    <div id="navbar"></div>
+
+    <main>
+        <h1 style="text-align: center; padding-top: 40px;">Welcome to the Fruits and Vegetables Store</h1> <br>
+        <section class="home-slide">
+            <div class="slide-image">
+                <img src="./fruits/veg and fruits.jpg" alt="Fresh Fruits and Vegetables" />
+            </div>
+            <div class="slide-text">
+                <h2>Fresh Fruits & Vegetables</h2>
+                <p>Get the best quality produce delivered to your doorstep. Healthy, organic, and delicious!</p>
+                <a href="#fruits-section" class="shop-now-btn">Shop Now</a>
+            </div>
+        </section>
+        <!-- Fruits section will be loaded here -->
+        <div class="center-heading">
+  <h1 class="heading">Fruits</h1>
+</div>
+<section id="fruits-section"></section>
+<div class="center-heading">
+  <h1 class="heading">Vegetables</h1>
+</div>
+<section id="vegetables-section"></section>
+<div class="center-heading">
+  <h1 class="heading" style="padding-top: 50px;">Why Choose Us</h1>
+</div>
+<section class="whychooseus" id="whychooseus" style="padding-top: 5px;">
+  <!-- Your content here -->
+</section>
+  
+    <div class="center-heading">
+  <h1 class="heading">contact us</h1>
+</div>
+<section id="contactus"></section>
+       
+
+    </main>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer"></div>
+
+    <script>
+      // Load navbar.html
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar').innerHTML = data;
+        });
+
+      // Load fruits.html
+      fetch('fruits.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('fruits-section').innerHTML = data;
+        });
+        fetch('vegetables.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('vegetables-section').innerHTML = data;
+  });
+  fetch('whychooseus.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('whychooseus').innerHTML = data;
+        });
+        fetch('contactus.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('contactus').innerHTML = data;
+        });
+      
+
+      // Load footer.html
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer').innerHTML = data;
+        });
+
+    </script>
+</body>
+</html>

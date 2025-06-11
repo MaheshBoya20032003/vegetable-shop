@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+nav ul {
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    justify-content: center;
+
+}
+
+
+
+
+.product-card img {
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+
+
+.product-card button:hover {
+  background: #388e3c;
+}
+
+
+nav {
+    margin: 20px 0;
+}
+nav ul li a {
+  color: #222;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+  color: burlywood;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.fruits, .vegetables {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0; /* or adjust as needed */
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+.product-card {
+  flex: 0 0 200px;         /* Fixed width for each card */
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 15px 0;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.product-card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.home-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f8f8;
+  padding: 20px 0;
+  gap: 40px;
+  height: 100vh;
+}
+
+.slide-image img {
+  width: 600px;
+  height: 450px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.slide-text {
+  max-width: 500px;
+}
+
+.slide-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #2d572c;
+}
+
+.slide-text p {
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  color: #444;
+}
+
+.shop-now-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: chocolate;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.shop-now-btn:hover {
+  background: #a0522d;
+}
+.fruits{
+  height: 100vh;
+}
+.vegetables{
+  height: 100vh;
+}
+.center-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* or any height you want */
+}
+.heading {
+    font-size: 50px;
+    color: #050505;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+.whychooseus {
+  height: 80vh;
+}
+.contact-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  min-height: 80vh;
+}
+
+.contact-center form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
